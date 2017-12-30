@@ -57,6 +57,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ACB4D7121FF7AA96009BEAA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC3DFE71FF79DB6006FE429 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACB4D7131FF7AAA5009BEAA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB4D7141FF7AAAD009BEAA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACB4D7151FF7AACA009BEAA5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ACC3DFE91FF79DB6006FE429 /* Main.storyboard */,
+				ACC3DFEE1FF79DB6006FE429 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		ACC3DFD91FF79DB6006FE429 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +109,12 @@
 		ACC3DFE41FF79DB6006FE429 /* SingaporePSI */ = {
 			isa = PBXGroup;
 			children = (
+				ACB4D7151FF7AACA009BEAA5 /* Storyboard */,
+				ACB4D7141FF7AAAD009BEAA5 /* Model */,
+				ACB4D7131FF7AAA5009BEAA5 /* View */,
+				ACB4D7121FF7AA96009BEAA5 /* Controller */,
 				ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */,
-				ACC3DFE71FF79DB6006FE429 /* ViewController.swift */,
-				ACC3DFE91FF79DB6006FE429 /* Main.storyboard */,
 				ACC3DFEC1FF79DB6006FE429 /* Assets.xcassets */,
-				ACC3DFEE1FF79DB6006FE429 /* LaunchScreen.storyboard */,
 				ACC3DFF11FF79DB6006FE429 /* Info.plist */,
 			);
 			path = SingaporePSI;
