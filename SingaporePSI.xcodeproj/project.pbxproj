@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7FA244AD84E6668A26D6FCC /* Pods_SingaporePSI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC3B02F8148EC939505CF66 /* Pods_SingaporePSI.framework */; };
+		ACB4D71C1FF7AE7F009BEAA5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D71B1FF7AE7F009BEAA5 /* Config.swift */; };
 		ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */; };
 		ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE71FF79DB6006FE429 /* ViewController.swift */; };
 		ACC3DFEB1FF79DB6006FE429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3DFE91FF79DB6006FE429 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		6DC3B02F8148EC939505CF66 /* Pods_SingaporePSI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingaporePSI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB4D71B1FF7AE7F009BEAA5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		ACC3DFE21FF79DB6006FE429 /* SingaporePSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC3DFE71FF79DB6006FE429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		ACB4D71A1FF7AE68009BEAA5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4D71B1FF7AE7F009BEAA5 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		ACC3DFD91FF79DB6006FE429 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		ACC3DFE41FF79DB6006FE429 /* SingaporePSI */ = {
 			isa = PBXGroup;
 			children = (
+				ACB4D71A1FF7AE68009BEAA5 /* Config */,
 				ACB4D7151FF7AACA009BEAA5 /* Storyboard */,
 				ACB4D7141FF7AAAD009BEAA5 /* Model */,
 				ACB4D7131FF7AAA5009BEAA5 /* View */,
@@ -254,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB4D71C1FF7AE7F009BEAA5 /* Config.swift in Sources */,
 				ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */,
 				ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */,
 			);
