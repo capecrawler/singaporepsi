@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let dispatcher = NetworkDispatcher(serverConfig: ServerConfig.appConfig)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        PollutantStandardIndexOperation().perform(onDispatcher: dispatcher, completionHandler: { response in
+            
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {

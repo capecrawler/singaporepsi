@@ -10,7 +10,7 @@ import Foundation
 
 struct Config {
     static let gmapsAPIKey = "AIzaSyCWIpr5uavwUGGlYNfC8JBvH5KdMCC6LDA"
-    static let serverAPIKey = "A785Y5RosQxFC1T1cG1JoYPhkmkbcDlep"
+    static let serverAPIKey = "785Y5RosQxFC1T1cG1JoYPhkmkbcDlep"
     static let baseURL = "https://api.data.gov.sg/v1"
 }
 

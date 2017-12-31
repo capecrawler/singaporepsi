@@ -1,5 +1,5 @@
 //
-//  DispatcherProtocol.swift
+//  BaseResponse.swift
 //  SingaporePSI
 //
 //  Created by Mario Antonio Cape on 31/12/2017.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol DispatcherProtocol {
-    func execute(request: RequestProtocol, completionHandler:@escaping(BaseResponse<Any>)->Void)    
+enum BaseResponse<T> {
+    case success(T)
+    case error(Error)
 }

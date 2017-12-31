@@ -8,14 +8,16 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class NetworkDispatcher: DispatcherProtocol {
+    
     let serverConfig: ServerConfig
     init(serverConfig: ServerConfig) {
         self.serverConfig = serverConfig
     }
     
-    func execute(request: RequestProtocol) {
+    func execute(request: RequestProtocol, completionHandler: @escaping (BaseResponse<Any>) -> Void) {
         let urlPath = serverConfig.baseURL + request.path
         var headers = [String: String]()
         for (key, value) in serverConfig.headers {
@@ -28,9 +30,10 @@ class NetworkDispatcher: DispatcherProtocol {
         Alamofire.request(urlPath, method: request.method, parameters: request.params, encoding: URLEncoding.default, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success:
-                print("success")
+                let jsonResponse = response.result.value ?? ""
+                completionHandler(BaseResponse.success(JSON(jsonResponse)))
             case .failure(let error):
-                print("error \(error)")
+                completionHandler(BaseResponse.error(error))
             }
         }
     }

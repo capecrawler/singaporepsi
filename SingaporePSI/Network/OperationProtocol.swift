@@ -9,5 +9,5 @@
 import Foundation
 
 protocol OperationProtocol {
-    func perform(onDispatcher dispatcher: DispatcherProtocol)
+    func perform(onDispatcher dispatcher: DispatcherProtocol, completionHandler: @escaping  (BaseResponse<Any>)->Void)
 }
