@@ -18,6 +18,7 @@
 		ACB4D73C1FF885F0009BEAA5 /* NetworkOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D73B1FF885F0009BEAA5 /* NetworkOperationProtocol.swift */; };
 		ACB4D73E1FF88D05009BEAA5 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D73D1FF88D05009BEAA5 /* BaseResponse.swift */; };
 		ACB4D7401FF898B4009BEAA5 /* PollutantStandardIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D73F1FF898B4009BEAA5 /* PollutantStandardIndex.swift */; };
+		ACB4D7451FF8B1EC009BEAA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB4D7441FF8B1EC009BEAA5 /* Localizable.strings */; };
 		ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */; };
 		ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE71FF79DB6006FE429 /* ViewController.swift */; };
 		ACC3DFEB1FF79DB6006FE429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3DFE91FF79DB6006FE429 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		ACB4D73B1FF885F0009BEAA5 /* NetworkOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationProtocol.swift; sourceTree = "<group>"; };
 		ACB4D73D1FF88D05009BEAA5 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		ACB4D73F1FF898B4009BEAA5 /* PollutantStandardIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantStandardIndex.swift; sourceTree = "<group>"; };
+		ACB4D7441FF8B1EC009BEAA5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		ACC3DFE21FF79DB6006FE429 /* SingaporePSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC3DFE71FF79DB6006FE429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */,
 				ACC3DFEC1FF79DB6006FE429 /* Assets.xcassets */,
 				ACC3DFF11FF79DB6006FE429 /* Info.plist */,
+				ACB4D7441FF8B1EC009BEAA5 /* Localizable.strings */,
 			);
 			path = SingaporePSI;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB4D7451FF8B1EC009BEAA5 /* Localizable.strings in Resources */,
 				ACC3DFF01FF79DB6006FE429 /* LaunchScreen.storyboard in Resources */,
 				ACC3DFED1FF79DB6006FE429 /* Assets.xcassets in Resources */,
 				ACC3DFEB1FF79DB6006FE429 /* Main.storyboard in Resources */,
@@ -272,12 +276,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SingaporePSI/Pods-SingaporePSI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DateParser/DateParser.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

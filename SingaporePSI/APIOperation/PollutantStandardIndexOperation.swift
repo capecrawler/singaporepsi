@@ -21,11 +21,9 @@ class PollutantStandardIndexOperation: NetworkOperationProtocol {
         dispatcher.execute(request: self.request, completionHandler: { response in
             switch response {
             case .success(let jsonResponse):
-                print("ok: \(jsonResponse)")
                 let psi = self.parseJson(json: jsonResponse as! JSON)
                 completionHandler(BaseResponse.success(psi))
-            case .error(let error):
-                print("error: \(error)")
+            case .error(let error):                
                 completionHandler(BaseResponse.error(error))
             }
         })

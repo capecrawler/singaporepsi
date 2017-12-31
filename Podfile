@@ -7,5 +7,6 @@ target 'SingaporePSI' do
   pod 'SwiftyJSON'
   pod 'GoogleMaps'
   pod 'DateParser'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end
