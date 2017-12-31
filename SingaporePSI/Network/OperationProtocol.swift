@@ -1,5 +1,5 @@
 //
-//  DispatcherProtocol.swift
+//  OperationProtocol.swift
 //  SingaporePSI
 //
 //  Created by Mario Antonio Cape on 31/12/2017.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol DispatcherProtocol {
-    func execute(request: RequestProtocol)    
+protocol OperationProtocol {
+    func perform(onDispatcher dispatcher: DispatcherProtocol)
 }

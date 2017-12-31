@@ -13,6 +13,9 @@
 		ACB4D7311FF87E09009BEAA5 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */; };
 		ACB4D7331FF87ED1009BEAA5 /* DispatcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */; };
 		ACB4D7351FF87F07009BEAA5 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */; };
+		ACB4D7371FF884C9009BEAA5 /* OperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7361FF884C9009BEAA5 /* OperationProtocol.swift */; };
+		ACB4D73A1FF88549009BEAA5 /* PollutantStandardIndexOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7391FF88549009BEAA5 /* PollutantStandardIndexOperation.swift */; };
+		ACB4D73C1FF885F0009BEAA5 /* NetworkOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D73B1FF885F0009BEAA5 /* NetworkOperationProtocol.swift */; };
 		ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */; };
 		ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE71FF79DB6006FE429 /* ViewController.swift */; };
 		ACC3DFEB1FF79DB6006FE429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3DFE91FF79DB6006FE429 /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatcherProtocol.swift; sourceTree = "<group>"; };
 		ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		ACB4D7361FF884C9009BEAA5 /* OperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationProtocol.swift; sourceTree = "<group>"; };
+		ACB4D7391FF88549009BEAA5 /* PollutantStandardIndexOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantStandardIndexOperation.swift; sourceTree = "<group>"; };
+		ACB4D73B1FF885F0009BEAA5 /* NetworkOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationProtocol.swift; sourceTree = "<group>"; };
 		ACC3DFE21FF79DB6006FE429 /* SingaporePSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC3DFE71FF79DB6006FE429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +119,18 @@
 				ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */,
 				ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */,
 				ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */,
+				ACB4D7361FF884C9009BEAA5 /* OperationProtocol.swift */,
+				ACB4D73B1FF885F0009BEAA5 /* NetworkOperationProtocol.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		ACB4D7381FF8850B009BEAA5 /* APIOperation */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4D7391FF88549009BEAA5 /* PollutantStandardIndexOperation.swift */,
+			);
+			path = APIOperation;
 			sourceTree = "<group>";
 		};
 		ACC3DFD91FF79DB6006FE429 = {
@@ -138,6 +154,7 @@
 		ACC3DFE41FF79DB6006FE429 /* SingaporePSI */ = {
 			isa = PBXGroup;
 			children = (
+				ACB4D7381FF8850B009BEAA5 /* APIOperation */,
 				ACB4D71E1FF7B24A009BEAA5 /* Network */,
 				ACB4D71A1FF7AE68009BEAA5 /* Config */,
 				ACB4D7151FF7AACA009BEAA5 /* Storyboard */,
@@ -287,9 +304,12 @@
 			files = (
 				ACB4D7311FF87E09009BEAA5 /* BaseRequest.swift in Sources */,
 				ACB4D71C1FF7AE7F009BEAA5 /* Config.swift in Sources */,
+				ACB4D73C1FF885F0009BEAA5 /* NetworkOperationProtocol.swift in Sources */,
 				ACB4D7201FF7B25E009BEAA5 /* RequestProtocol.swift in Sources */,
+				ACB4D73A1FF88549009BEAA5 /* PollutantStandardIndexOperation.swift in Sources */,
 				ACB4D7351FF87F07009BEAA5 /* NetworkDispatcher.swift in Sources */,
 				ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */,
+				ACB4D7371FF884C9009BEAA5 /* OperationProtocol.swift in Sources */,
 				ACB4D7331FF87ED1009BEAA5 /* DispatcherProtocol.swift in Sources */,
 				ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */,
 			);

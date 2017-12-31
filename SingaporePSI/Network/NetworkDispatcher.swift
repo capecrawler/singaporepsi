@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class NetworkDispatcher: Dispatcher {
+class NetworkDispatcher: DispatcherProtocol {
     let serverConfig: ServerConfig
     init(serverConfig: ServerConfig) {
         self.serverConfig = serverConfig
