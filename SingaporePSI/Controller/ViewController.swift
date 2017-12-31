@@ -14,11 +14,13 @@ class ViewController: UIViewController {
     private let dispatcher = NetworkDispatcher(serverConfig: ServerConfig.appConfig)
     
     @IBOutlet weak var mapVIew: GMSMapView!
-    var markers = [GMSMarker]()
+    private var markers = [GMSMarker]()
+    private var markerView: MarkerInfoView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.mapVIew.delegate = self
         let camera = GMSCameraPosition.camera(withLatitude: 1.35735, longitude: 103.82, zoom: 10.5)
         self.mapVIew.camera = camera
         self.loadPSI()
@@ -48,6 +50,28 @@ private extension ViewController {
     
     func populateMap(psi: PollutantStandardIndex) {
         
+        for (_, region) in psi.items {
+            if region.latitude != 0 && region.longitude != 0 {
+                let position = CLLocationCoordinate2D(latitude: CLLocationDegrees(region.latitude), longitude: CLLocationDegrees(region.longitude))
+                let marker = GMSMarker(position: position)
+                marker.userData = region
+                marker.map = self.mapVIew
+                self.markers.append(marker)
+            }
+        }
+        
+    }
+    
+    func generateReadings(forRegion region:Region)->String {
+        var readings = "Readings:\n"
+        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 0
+        
+        for (key, value) in region.readings {
+            readings.append("  \(key): \(formatter.string(from: value as NSNumber)!)\n")
+        }
+        return readings
     }
     
     func clearMarkers() {
@@ -65,3 +89,17 @@ private extension ViewController {
     }
     
 }
+
+
+
+extension ViewController: GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        let infoWindow = Bundle.main.loadNibNamed("MarkerInfoView", owner: self, options: nil)?.first as! MarkerInfoView
+        let region = marker.userData as! Region
+        infoWindow.contentLabel.text = self.generateReadings(forRegion: region)
+        infoWindow.frame = CGRect(x: 0, y: 0, width: 260, height: 252)
+        return infoWindow
+    }
+}
+
