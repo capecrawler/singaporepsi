@@ -67,6 +67,9 @@ private extension ViewController {
         
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 2
+        formatter.minimumIntegerDigits = 1
+        formatter.roundingMode = .halfUp
         
         for (key, value) in region.readings {
             readings.append("  \(key): \(formatter.string(from: value as NSNumber)!)\n")
