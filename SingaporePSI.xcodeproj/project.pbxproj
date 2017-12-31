@@ -11,6 +11,8 @@
 		ACB4D71C1FF7AE7F009BEAA5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D71B1FF7AE7F009BEAA5 /* Config.swift */; };
 		ACB4D7201FF7B25E009BEAA5 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D71F1FF7B25E009BEAA5 /* RequestProtocol.swift */; };
 		ACB4D7311FF87E09009BEAA5 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */; };
+		ACB4D7331FF87ED1009BEAA5 /* DispatcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */; };
+		ACB4D7351FF87F07009BEAA5 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */; };
 		ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */; };
 		ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3DFE71FF79DB6006FE429 /* ViewController.swift */; };
 		ACC3DFEB1FF79DB6006FE429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3DFE91FF79DB6006FE429 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		ACB4D71B1FF7AE7F009BEAA5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		ACB4D71F1FF7B25E009BEAA5 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatcherProtocol.swift; sourceTree = "<group>"; };
+		ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		ACC3DFE21FF79DB6006FE429 /* SingaporePSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingaporePSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC3DFE51FF79DB6006FE429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC3DFE71FF79DB6006FE429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				ACB4D71F1FF7B25E009BEAA5 /* RequestProtocol.swift */,
 				ACB4D7301FF87E09009BEAA5 /* BaseRequest.swift */,
+				ACB4D7321FF87ED1009BEAA5 /* DispatcherProtocol.swift */,
+				ACB4D7341FF87F07009BEAA5 /* NetworkDispatcher.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 				ACB4D7311FF87E09009BEAA5 /* BaseRequest.swift in Sources */,
 				ACB4D71C1FF7AE7F009BEAA5 /* Config.swift in Sources */,
 				ACB4D7201FF7B25E009BEAA5 /* RequestProtocol.swift in Sources */,
+				ACB4D7351FF87F07009BEAA5 /* NetworkDispatcher.swift in Sources */,
 				ACC3DFE81FF79DB6006FE429 /* ViewController.swift in Sources */,
+				ACB4D7331FF87ED1009BEAA5 /* DispatcherProtocol.swift in Sources */,
 				ACC3DFE61FF79DB6006FE429 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
