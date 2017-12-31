@@ -1,5 +1,5 @@
 //
-//  Request.swift
+//  RequestProtocol.swift
 //  SingaporePSI
 //
 //  Created by Mario Antonio Cape on 30/12/2017.
@@ -7,20 +7,18 @@
 //
 
 import Foundation
+import Alamofire
 
-enum HTTPMethod: String {
-    case get, post // we can add more
-}
 
-protocol Request {
+protocol RequestProtocol {
     var path: String { get }
     var method: HTTPMethod { get }
-    var params: [String: Any]? { get }
+    var params: Parameters? { get }
     var headers: [String: String]? { get }
 }
 
-extension Request {
+extension RequestProtocol {
     var method: HTTPMethod { return .get }
-    var params: [String: Any]? { return nil }
-    var headers: [String: String]? { return nil }
+    var params: Parameters { return [:] }
+    var headers: [String: String] { return [:] }
 }
